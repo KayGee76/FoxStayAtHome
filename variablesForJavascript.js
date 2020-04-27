@@ -58,7 +58,21 @@ let printNumbers = (n) => {
     };
 };
 console.log('Creating function (getGreetingTo), where you can add a name , and geting back a greetings to that Person.');
-let getGreetingTo = (names) =>{
-    //console.log()
+let getGreetingTo = (names) =>{    
     return `Hello, ${names}`
 };
+console.log("Creating function (printValues), where you can add items to an array ['',''...] , and geting back the items in print, with for loop.");
+let printValues = (arrayTwo) => {
+    for (let i = 0; i < arrayTwo.length; i++) {
+      console.log(arrayTwo[i]);
+    }
+  };
+  console.log("Creating function (myNumbers), where you can add items to an array ['',''...] , and geting back the items in print, with foreach loop.");
+  let myNumbers = (arrayThree) =>{
+    arrayThree.forEach((items)=>{
+        console.log(items)
+        })
+  
+    };
+
+
