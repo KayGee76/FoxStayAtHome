@@ -67,12 +67,9 @@ let printValues = (arrayTwo) => {
       console.log(arrayTwo[i]);
     }
   };
-  console.log("Creating function (myNumbers), where you can add items to an array ['',''...] , and geting back the items in print, with foreach loop.");
-  let myNumbers = (arrayThree) =>{
+  console.log("Creating function (myItems), where you can add items to an array ['',''...] , and geting back the items in print, with foreach loop.");
+  let myItems = (arrayThree) =>{
     arrayThree.forEach((items)=>{
         console.log(items)
-        })
-  
+        })  
     };
-
-
