@@ -34,8 +34,36 @@ let additionalBlock = {
     title: "Added with javascript",
     text: "This block was added using JavaScript's jQuery library. How awesome!"
   };
-  $('body').append('div');
-  $('div').append('<h2>${additionalBlock.title}</h2>');
-  $('div').append('<p class=Lorem>${additionalBlock.text}</p>');
   
-  
+  $('body').append(`<h2>${additionalBlock.title}</h2>`);
+  $('body').append(`<p class=Lorem>${additionalBlock.text}</p>`);
+
+  $('#btnOne').click(()=>{
+      console.log("'Yeah, you clicked me'")
+  });
+  $('#btnTwo').click(()=>{
+    $('#btnOne').text('Hey, neighbour!')
+});
+$('#btnThree').click(()=>{
+    $('#btnOne').css('background', 'Red')
+    $('#btnTwo').css('background','White')
+    $('#btnThree').css('background','Green')
+});
+let click =0;
+    
+$('#btnFour').click(()=>{ 
+   
+    if (click<1) {       
+        $('#btnOne').css("background", $("input").val())
+        $('#btnTwo').css("background", $("input").val())
+        $('#btnThree').css("background",$("input").val())
+        $('#btnFour').css("background", $("input").val()) 
+    } else{
+        console.log('you have set your colors!')
+    }
+    click++;  
+      });       
+    
+    
+    
+
